@@ -30,7 +30,7 @@ The dataset, sourced from Kaggle, comprises images of rice leaves affected by va
 ## Model Building
 
 1. **Architecture:**
-   -Here's a textual representation of the model architecture based on your provided code:
+   -Here's a textual representation of the model architecture based on my code:
 
 ```plaintext
 Model Architecture:
