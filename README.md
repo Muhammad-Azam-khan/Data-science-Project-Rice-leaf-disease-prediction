@@ -30,15 +30,57 @@ The dataset, sourced from Kaggle, comprises images of rice leaves affected by va
 ## Model Building
 
 1. **Architecture:**
-   - The model architecture consists of:
-     - Input Layer
-     - Convolution Layer 1 (Conv1)
-     - Max Pooling Layer 1 (Pooling1)
-     - Convolution Layer 2 (Conv2)
-     - Max Pooling Layer 2 (Pooling2)
-     - Convolution Layer 3 (Conv3)
-     - Two Dense Layers (Dense1, Dense2)
-     - Output (Softmax) Layer
+   -Here's a textual representation of the model architecture based on your provided code:
+
+```plaintext
+Model Architecture:
+
+- Input Layer:
+  - Shape: (IMAGE_SIZE, IMAGE_SIZE, CHANNELS)
+
+- Convolution Layer 1 (Conv1):
+  - Filters: 32
+  - Kernel Size: (3, 3)
+  - Padding: 'same'
+  - Activation: 'relu'
+
+- Max Pooling Layer 1 (Pooling1):
+  - Pool Size: (2, 2)
+
+- Convolution Layer 2 (Conv2):
+  - Filters: 64
+  - Kernel Size: (3, 3)
+  - Padding: 'same'
+  - Activation: 'relu'
+
+- Max Pooling Layer 2 (Pooling2):
+  - Pool Size: (2, 2)
+
+- Convolution Layer 3 (Conv3):
+  - Filters: 64
+  - Kernel Size: (3, 3)
+  - Padding: 'same'
+  - Activation: 'relu'
+
+- Max Pooling Layer 3 (Pooling3):
+  - Pool Size: (2, 2)
+
+- Dense Layer 1 (Dense1):
+  - Neurons: 500
+  - Activation: 'relu'
+
+- Dropout Layer 1:
+  - Rate: 0.3
+
+- Dense Layer 2 (Dense2):
+  - Neurons: 3 (num_classes)
+  - Activation: 'softmax'
+
+- Output Layer:
+  - Activation: 'softmax'
+```
+
+This represents the sequential architecture of your Convolutional Neural Network (CNN) for rice leaf disease prediction. Adjustments can be made based on specific requirements or optimization needs.
 
 2. **Training:**
    - Train the model on the augmented and split dataset to learn disease classification patterns.
